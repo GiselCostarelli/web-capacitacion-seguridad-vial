@@ -14,6 +14,8 @@ header nav ul{
 }
 
 .imagen-logo{
+    animation-name:aparecer ;
+    animation-duration: 3s;
     width: 161px;
     height: 55px;
     padding-top: 10px;
@@ -54,6 +56,8 @@ a{
 
 
 .texto1{
+    animation-name:aparecer ;
+    animation-duration: 3s;
     text-shadow: 0px 10px 10px rgb(0, 0, 0);
     font-size: 60px;
     color: white;
@@ -62,9 +66,12 @@ a{
     top: 280px;
     font-weight: bold;
     font-family:"roboto"
+    
     }
 
 .texto2{
+    animation-name:aparecer ;
+    animation-duration: 3s;
     text-shadow: 0px 4px 4px rgb(0, 0, 0);;
     font-size: 34px;
     color:#ffffff ;
@@ -73,6 +80,15 @@ a{
     top: 370px;
     font-weight: bold;
     font-family:"roboto" 
+    
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .contenedor{
@@ -82,15 +98,22 @@ a{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    box-shadow: 5px 10px 10px black;
+    color:rgb(255, 255, 255);
+    margin-top: 30px;
     width: 700px;
     height: 600px;
-    box-shadow: 5px 10px 10px black;
-    color: rgb(255, 255, 255);
-    margin-top: 30px;
-    font-family:"roboto"
+    transition: background-color;height 
 }  
 
+.contenedor:hover{
+    background-color: #242A39;
+
+}
+
+
 .contenedor2{
+    transition: background-color;
     margin-left: 24px;
     font-size: 20px;
     background-color: #4B5160;
@@ -104,8 +127,14 @@ a{
     color: rgb(255, 255, 255);
     margin-top: 65px;
     font-family:"roboto"
-    
 } 
+
+.contenedor2:hover{
+    background-color: #242A39;
+    transform: scale(1.1);
+
+}
+
 
 .grid2{
     display: grid;
@@ -114,6 +143,8 @@ a{
 } 
 
 .texto3{
+    animation-name:aparecer ;
+    animation-duration: 3s;
     text-shadow: 0px 8px 8px rgb(0, 0, 0);;
     font-size: 60px;
     color: rgb(0, 0, 0);
@@ -125,6 +156,8 @@ a{
     }
     
 .texto4{
+    animation-name:aparecer ;
+    animation-duration: 3s;
     text-shadow: 0px 2px 2px rgb(0, 0, 0);;
     font-size: 34px;
     color: rgb(0, 0, 0);
@@ -150,10 +183,15 @@ a{
 .imagenserv{
         width: 450px;
         height: 400px;
-        padding: 24px 12px 24px;
+        padding: 50px 12px 50px;
         margin-right: 24px;
         margin-left: 24px;
+
     }
+.imagenserv:hover{
+    transform: scale(1.2);
+}
+
 .im{
         display: flex;
         justify-content: center;
@@ -192,6 +230,10 @@ footer{
     width: 400px;
     padding: 24px;
     }
+
+.imagentutor:hover{
+    transform: scale(1.5);
+}
     
 
 .clase-tutor{
@@ -239,7 +281,8 @@ footer{
 
 .imageninf{
     width: 212px;
-    height: 220px;
+    height: 200px;
+    margin-block-end: 24px;
 
 }
 
